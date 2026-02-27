@@ -1,0 +1,237 @@
+.articlesListContainer {
+  padding-top: 107px;
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+}
+
+.articlesListHeading {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: Ferry;
+}
+
+.articleButtonContainer {
+  align-items: flex-end;
+  padding-top: 32px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.articlesListItem {
+  display: flex;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 19px 30px;
+}
+
+.articleInfoContainer {
+  display: flex;
+  gap: 14px;
+}
+
+.articleType {
+  text-align: center;
+  min-width: 157px;
+  background: rgb(255, 182, 79);
+  font-weight: 400;
+  padding: 4px 0;
+  line-height: 15px;
+  font-size: 12px;
+  border-radius: 5px;
+  letter-spacing: 2%;
+}
+
+.articlesList {
+  row-gap: 40px;
+  margin: 0;
+  list-style: none;
+  grid-auto-rows: 691px;
+  padding: 0;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 640px);
+  display: grid;
+}
+
+.articleButton:hover {
+  cursor: pointer;
+  background: rgb(3, 148, 145);
+}
+
+.articleLink {
+  text-underline-offset: 3px;
+  text-decoration-line: underline;
+}
+
+.articleDescription {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: normal;
+  padding-top: 20px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 11;
+  height: 228px;
+  line-clamp: 11;
+  overflow: hidden;
+}
+
+.articleText {
+  color: rgb(148, 148, 148);
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.articleButton {
+  padding: 14px;
+  width: 223px;
+  border: none;
+  color: black;
+  font-weight: 400;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 2%;
+  background: rgb(124, 227, 225);
+  line-height: 19px;
+  text-align: center;
+}
+
+.articleImage {
+  width: auto;
+  margin: 0 auto;
+  height: 40%;
+}
+
+.articleImage img {
+  height: 100%;
+}
+
+.articleTypeContainer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 10px;
+}
+
+.articleHeading {
+  font-size: 26px;
+  font-weight: 500;
+  overflow: hidden;
+  margin-top: 24px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+  height: 85px;
+  display: -webkit-box;
+  line-height: 31px;
+  white-space: normal;
+  letter-spacing: 2%;
+}
+
+@media screen and (max-width: 1350px) {
+  .articlesListContainer {
+    padding-top: 57px;
+    gap: 34px;
+  }
+
+  .articleImage {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .articleImage img {
+    height: 100%;
+  }
+
+  .articlesList {
+    padding: 0;
+    grid-template-columns: 641px;
+    margin: 0;
+    justify-content: center;
+    grid-auto-rows: 691px;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .articleButton {
+    font-size: 17px;
+    width: 195px;
+    line-height: 17px;
+    padding: 12px;
+  }
+
+  .articleButtonContainer {
+    margin-top: auto;
+  }
+
+  .articleInfoContainer {
+    gap: 9px;
+  }
+
+  .articleImage {
+    max-width: 90%;
+    max-height: 25%;
+  }
+
+  .articleImage img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .articleHeading {
+    text-overflow: ellipsis;
+    margin-bottom: 6px;
+    line-clamp: 3;
+    white-space: normal;
+    height: 69px;
+    margin-top: 21px;
+    line-height: 23px;
+    font-size: 19px;
+    -webkit-line-clamp: 3;
+  }
+
+  .articlesListItem {
+    padding-right: 14px;
+    padding-left: 24px;
+  }
+
+  .articleType {
+    line-height: 12px;
+    font-size: 10px;
+    min-width: 132px;
+  }
+
+  .articlesListHeading {
+    line-height: 34px;
+    width: 335px;
+    margin: 0 auto;
+    font-size: 28px;
+  }
+
+  .articleText {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .articlesList {
+    grid-auto-rows: 710px;
+    grid-template-columns: 335px;
+  }
+
+  .articleDescription {
+    -webkit-line-clamp: 14;
+    padding-top: 18px;
+    line-clamp: 14;
+    height: 255px;
+    width: 290px;
+  }
+}

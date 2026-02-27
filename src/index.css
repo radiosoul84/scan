@@ -1,0 +1,6 @@
+@import url(./helpers/css/normalize.css);
+@import url(./helpers/css/fonts.css);
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

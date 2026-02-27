@@ -1,0 +1,263 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariffs {
+  padding-top: 107px;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  max-width: 1320px;
+}
+
+.descriptionList {
+  margin: 10px 0 0 0;
+  padding: 0;
+  gap: 5px;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  position: relative;
+}
+
+.currentTariff {
+  border-radius: 10px;
+  right: 10px;
+  height: 24px;
+  color: rgb(255, 255, 255);
+  top: 12px;
+  background-color: #3ba5e0;
+  justify-content: center;
+  display: flex;
+  font-size: 14px;
+  line-height: 17px;
+  width: 134px;
+  position: absolute;
+  align-items: center;
+  font-weight: 400;
+}
+
+.prevPrice {
+  line-height: 30px;
+  text-decoration-line: line-through;
+  font-weight: 500;
+  opacity: 0.5;
+  font-size: 25px;
+}
+
+.blueBackground {
+  background-color: rgb(124, 227, 225);
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.itemTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem::before {
+  position: absolute;
+  top: 0;
+  content: url("/list_icon.svg");
+  left: 0;
+}
+
+.blueBorder {
+  border: 2px solid rgb(124, 227, 225);
+}
+
+.blackBorder {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.itemTitleContainer {
+  max-height: 132px;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 8px;
+  position: relative;
+  border-top-right-radius: 8px;
+  padding: 30px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 68px;
+  gap: 10px;
+}
+
+.orangeBackground {
+  background-color: rgb(255, 182, 79);
+}
+
+.orangeBorder {
+  border: 2px solid rgb(255, 182, 79);
+}
+
+.descriptionHeading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.currentPrice {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.button:hover {
+  background: rgb(41, 68, 245);
+  cursor: pointer;
+}
+
+.whiteText {
+  color: rgb(255, 255, 255);
+}
+
+.listItem {
+  padding: 0 0 0 28px;
+  display: inline-block;
+  position: relative;
+}
+
+.blackBackground {
+  background-color: rgb(0, 0, 0);
+}
+
+.heading {
+  line-height: 54px;
+  font-family: Ferry;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.infoContainer {
+  display: flex;
+  position: relative;
+  padding: 33px 20px 0 30px;
+  flex-direction: column;
+}
+
+.item {
+  border-radius: 10px;
+  flex-direction: column;
+  min-height: 540px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  width: 415px;
+  display: flex;
+}
+
+.button {
+  font-size: 20px;
+  width: 355px;
+  font-weight: 400;
+  padding: 0;
+  align-self: center;
+  line-height: 24px;
+  height: 60px;
+  margin-top: 55px;
+  color: rgb(255, 255, 255);
+  background: rgb(89, 112, 255);
+  border-radius: 5px;
+  border: none;
+}
+
+.title {
+  font-weight: 500;
+  line-height: 36px;
+  font-size: 30px;
+}
+
+.text {
+  line-height: 22px;
+  font-weight: 400;
+  width: 371px;
+  font-size: 18px;
+}
+
+.button:disabled {
+  cursor: default;
+  color: rgb(0, 0, 0);
+  background: rgb(210, 210, 210);
+}
+
+.descriptionContainer {
+  flex-direction: column;
+  display: flex;
+  padding-top: 59px;
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    align-items: center;
+    flex-direction: column;
+    gap: 43px;
+  }
+
+  .tariffs {
+    padding-top: 80px;
+    align-items: center;
+    max-width: 768px;
+    gap: 33px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .listItem {
+    line-height: 19px;
+    font-size: 16px;
+  }
+
+  .button {
+    border-radius: 5px;
+    width: 286px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 37px;
+  }
+
+  .infoContainer {
+    padding-top: 20px;
+  }
+
+  .tariffs {
+    margin: 0 auto;
+    max-width: 335px;
+  }
+
+  .heading {
+    align-self: flex-start;
+    line-height: 34px;
+    font-size: 28px;
+  }
+
+  .text {
+    width: 273px;
+  }
+
+  .descriptionContainer {
+    padding-top: 36px;
+  }
+
+  .icon {
+    width: 20%;
+  }
+
+  .item {
+    width: 335px;
+    min-height: 512px;
+  }
+
+  .currentTariff {
+    top: 3px;
+  }
+}

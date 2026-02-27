@@ -1,0 +1,256 @@
+.header {
+  width: 100%;
+  height: 93px;
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  justify-content: space-between;
+  padding: 0 60px;
+  display: flex;
+  width: 1440px;
+  align-items: center;
+}
+
+.divider {
+  height: 26px;
+  width: 2px;
+  background-color: rgb(2, 148, 145);
+  opacity: 0.6;
+}
+
+.logoutButton {
+  font-weight: 400;
+  opacity: 0.4;
+  padding: 0;
+  background: none;
+  font-size: 10px;
+  border: none;
+  line-height: 12px;
+}
+
+.logoutGroup {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.username {
+  font-weight: 400;
+  line-height: 17px;
+  font-size: 14px;
+}
+
+.registerLink {
+  padding: 0;
+  opacity: 0.4;
+  font-weight: 400;
+  background: none;
+}
+
+.usedText {
+  grid-area: usedText;
+}
+
+.authLink {
+  background: rgb(124, 227, 225);
+  color: rgb(0, 0, 0);
+  line-height: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  letter-spacing: 1%;
+  padding: 5px 12px;
+}
+
+.used {
+  grid-area: usedNumber;
+}
+
+.limit {
+  grid-area: limitNumber;
+  color: rgb(138, 197, 64);
+}
+
+.userImg {
+  height: 32px;
+  border-radius: 50%;
+  width: 32px;
+}
+
+.numbers {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0%;
+  line-height: 17px;
+}
+
+.infoPanel {
+  flex: 1;
+  align-content: center;
+  display: grid;
+  height: 63px;
+
+  padding: 9px;
+  background: rgba(217, 217, 217, 0.3);
+  grid-template-areas:
+    "usedText usedNumber"
+    "limitText limitNumber";
+  gap: 5px;
+  border-radius: 5px;
+  width: 175px;
+}
+
+.authLink:hover {
+  cursor: pointer;
+}
+
+.limitText {
+  grid-area: limitText;
+}
+
+.navigation {
+  flex: 1;
+}
+
+.userInfoContainer {
+  display: flex;
+  gap: 128px;
+  align-items: center;
+}
+
+.link {
+  color: black;
+  line-height: 17px;
+  letter-spacing: 1%;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.imgContainer {
+  flex: 1;
+}
+
+.navList {
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+  display: flex;
+  gap: 49px;
+  list-style: none;
+}
+
+.loginPanel {
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+.wrapper {
+  align-items: flex-end;
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  justify-self: end;
+  font-size: 10px;
+  letter-spacing: 0%;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  line-height: 12px;
+  opacity: 0.4;
+}
+
+.logoutButton:hover {
+  cursor: pointer;
+}
+
+.panelContainer {
+  justify-content: flex-end;
+  display: flex;
+  flex: 1;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    margin: 0 auto;
+    width: 728px;
+    padding: 0;
+  }
+
+  .userInfoContainer {
+    gap: 20px;
+  }
+
+  .loginPanel {
+    gap: 25px;
+  }
+
+  .navList {
+    gap: 30px;
+  }
+
+  .infoPanel {
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .loginPanel {
+    display: none;
+  }
+
+  .image {
+    width: 111px;
+    height: auto;
+  }
+
+  .logoutGroup {
+    display: none;
+  }
+
+  .userInfoContainer {
+    gap: 0;
+  }
+
+  .imgContainer {
+    flex: 0;
+  }
+
+  .text {
+    justify-self: start;
+  }
+
+  .panelContainer {
+    justify-content: flex-start;
+    padding-left: 30px;
+  }
+
+  .container {
+    width: 335px;
+  }
+
+  .infoPanel {
+    width: 132px;
+    grid-template-areas:
+      "usedText"
+      "usedNumber"
+      "limitText"
+      "limitNumber";
+    padding: 5px;
+    gap: 2px;
+  }
+
+  .navigation {
+    display: none;
+  }
+}

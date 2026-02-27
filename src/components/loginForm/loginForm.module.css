@@ -1,0 +1,279 @@
+.container {
+  display: grid;
+  padding-top: 70px;
+  justify-content: space-between;
+  grid-template-areas:
+    "heading form"
+    "image form";
+}
+
+.formContainer {
+  width: 430px;
+  padding: 25px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  grid-area: form;
+  border-radius: 10px;
+}
+
+.heading {
+  font-weight: 900;
+  font-size: 40px;
+  font-family: Ferry;
+  line-height: 48px;
+  grid-area: heading;
+}
+
+.form {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 40px;
+  display: flex;
+  width: 100%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.alterLoginGroup {
+  flex-direction: column;
+  padding-top: 30px;
+  display: flex;
+  align-self: flex-start;
+}
+
+.alterLoginButton:hover {
+  cursor: pointer;
+}
+
+.buttonsGroup {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.errorInput {
+  border: 1px solid rgb(255, 89, 89);
+  color: rgb(255, 89, 89);
+  box-shadow: 0px 0px 10px 0px rgba(255, 89, 89, 0.2);
+}
+
+.submitButton {
+  border: none;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 5px;
+  background: rgb(89, 112, 255);
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.image {
+  object-fit: cover;
+  padding-left: 112px;
+  grid-area: image;
+  height: 342px;
+}
+
+.button:last-of-type {
+  min-width: 213px;
+}
+
+.icon {
+  top: -60px;
+  left: -50px;
+  position: absolute;
+}
+
+.alterButtons {
+  gap: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.alterLoginButton {
+  height: 31px;
+  justify-content: center;
+  width: 96px;
+  border-radius: 3px;
+  padding: 0;
+  display: flex;
+  background: none;
+  align-items: center;
+  border: 1px solid rgba(89, 112, 255, 0.51);
+}
+
+.registerForm {
+  align-self: center;
+  font-size: 16px;
+  padding-top: 40px;
+  height: 20px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.buttonInactive {
+  border-bottom: 2px solid rgb(199, 199, 199);
+  color: rgb(199, 199, 199);
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 15px;
+  color: rgb(148, 148, 148);
+}
+
+.input {
+  border: 1px solid rgb(199, 199, 199);
+  line-height: 19px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 12px 19px;
+  font-weight: 400;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  outline: none;
+}
+
+.button {
+  color: rgb(2, 148, 145);
+  line-height: 19px;
+  min-width: 151px;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  background-color: transparent;
+  padding-bottom: 8px;
+  text-align: center;
+  border-bottom: 2px solid rgb(2, 148, 145);
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background: rgb(67, 91, 253);
+}
+
+.restoreLink {
+  color: rgb(89, 112, 255);
+  letter-spacing: 1%;
+  line-height: 17px;
+  text-decoration-line: underline;
+  font-size: 14px;
+  padding-top: 15px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.submitButton:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background: rgb(89, 112, 255);
+}
+
+.serverErrorText {
+  height: auto;
+}
+
+.errorText {
+  font-weight: 400;
+  align-self: center;
+  color: rgb(255, 89, 89);
+  line-height: 17px;
+  height: 20px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    padding-top: 31px;
+    grid-template-areas:
+      "heading"
+      "form"
+      "image";
+    justify-items: center;
+  }
+
+  .icon {
+    top: -75px;
+    left: 30%;
+  }
+
+  .formContainer {
+    margin-top: 126px;
+    margin-bottom: 49px;
+  }
+
+  .image {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .button {
+    padding-bottom: 10px;
+    min-width: 103px;
+    line-height: 17px;
+    font-size: 14px;
+  }
+
+  .input {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .image {
+    width: 335px;
+  }
+
+  .heading {
+    line-height: 26px;
+    width: 335px;
+    padding-right: 50px;
+    font-size: 22px;
+  }
+
+  .error {
+    line-height: 15px;
+    height: 15px;
+    font-size: 12px;
+  }
+
+  .label {
+    line-height: 17x;
+    font-size: 14px;
+  }
+
+  .formContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 335px;
+  }
+
+  .icon {
+    left: 25%;
+    top: -80px;
+  }
+
+  .button:last-of-type {
+    min-width: 182px;
+  }
+
+  .container {
+    margin: 0 auto;
+    justify-items: start;
+    max-width: 335px;
+  }
+
+  .submitButton {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

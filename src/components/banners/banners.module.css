@@ -1,0 +1,110 @@
+.banners {
+  flex-direction: column;
+  gap: 63px;
+  display: flex;
+  padding-top: 109px;
+}
+
+.image {
+  height: 64px;
+  width: 64px;
+}
+
+.text {
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.buttonNext {
+  background-image: url("/banner-left-arrow.png");
+}
+
+.heading {
+  font-weight: 900;
+  line-height: 54px;
+  font-size: 45px;
+  font-family: Ferry;
+}
+
+.buttonPrev {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/banner-right-arrow.png");
+}
+
+.item {
+  flex-direction: column;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  padding: 22px 20px;
+  width: 400px;
+  background: rgb(255, 255, 255);
+  gap: 12px;
+  height: 225px;
+}
+
+.container {
+  max-width: 1320px;
+  gap: 30px;
+  align-items: center;
+  display: flex;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button {
+  width: 39px;
+  height: 39px;
+  border: none;
+  background: none;
+}
+
+@media screen and (max-width: 745px) {
+  .container {
+    max-width: 375px;
+    gap: 0;
+  }
+
+  .carousel {
+    max-width: 335px;
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .item {
+    gap: 12px;
+    height: 238px;
+    width: 298px;
+    padding: 22px 5px 30px 15px;
+  }
+
+  .heading {
+    line-height: 34px;
+    padding-right: 80px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .item {
+    width: 315px;
+    height: 230px;
+    padding: 17px 20px;
+    gap: 19px;
+  }
+
+  .container {
+    max-width: 728px;
+    gap: 20px;
+  }
+
+  .carousel {
+    align-items: center;
+    padding-top: 50px;
+    gap: 40px;
+  }
+}

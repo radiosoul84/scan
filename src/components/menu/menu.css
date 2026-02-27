@@ -1,0 +1,151 @@
+.bm-burger-button {
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  right: 28px;
+  top: 32px;
+}
+
+.bm-burger-bars {
+  background: rgb(2, 148, 145);
+}
+
+.bm-burger-bars-hover {
+  background: rgb(5, 175, 172);
+}
+
+.bm-cross {
+  background: transparent;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bm-menu {
+  background: rgb(2, 148, 145);
+  padding: 0;
+  width: 100%;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bm-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.bm-item:first-of-type {
+  margin-bottom: 36px;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-cross-button {
+  height: 25px;
+  width: 25px;
+  background-image: url("/close_button.svg");
+  right: 28px !important;
+  top: 32px !important;
+}
+
+.image {
+  width: 111px;
+  height: 111px;
+}
+
+.burgerMenuLogo {
+  height: 93px;
+  width: 335px;
+  margin: 0 auto;
+}
+
+.burgerMenuList {
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.burgerMenuListItem {
+  width: 150px;
+  padding-bottom: 26px;
+  text-align: center;
+}
+
+.burgerMenuLink {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 1%;
+}
+
+.burgerMenuButtons {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.burgerMenuRegisterLink {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 1%;
+  opacity: 0.4;
+}
+
+.burgerMenuLoginLink {
+  width: 295px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1%;
+  border-radius: 5px;
+  background: rgb(124, 227, 225);
+  padding: 15px 0;
+  text-align: center;
+}
+
+.burgerMenuLoginLink:hover {
+  background: rgb(67, 206, 203);
+}
+
+.logoutButton {
+  width: 295px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1%;
+  border-radius: 5px;
+  background: rgb(124, 227, 225);
+  padding: 15px 0;
+  text-align: center;
+  border: none;
+}
+
+.logoutButton:hover {
+  cursor: pointer;
+  background: rgb(67, 206, 203);
+}
